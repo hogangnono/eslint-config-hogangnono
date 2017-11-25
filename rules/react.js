@@ -27,8 +27,15 @@ module.exports = {
 
         // isMounted() 사용안하도록 권고
         'react/no-is-mounted': 1,
-        // pure function 권고
-        'react/prefer-stateless-function': 1,
+
+        // pure function 권고 -> createReactClass 때문에 안함
+        'react/prefer-stateless-function': 0,
+
+        // prop-types primitive 타입으로 지정할 수 있게
+        "react/forbid-prop-types": 0,
+
+        // isRequired가 아닌 props에 대해서 defaultProps를 지정 안해도 되게
+        "react/require-default-props": 0,
 
         'react/prop-types': 1,
         'react/no-unused-prop-types': 1,
