@@ -44,6 +44,7 @@ module.exports = {
         'import/first': 0, // absolute/relative import 위치 상관 없이
         'import/no-mutable-exports': 0,
 
-        "no-mixed-operators": 0 // 연산자를 연결해서 쓸 수 있도록
+        "no-mixed-operators": 0, // 연산자를 연결해서 쓸 수 있도록
+        "jsx-a11y/anchor-is-valid": 0 // anchor 태그를 button 대신 쓸 수 있도록 (IE 스타일 오류 때문)
     }
 };
