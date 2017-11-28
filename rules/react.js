@@ -23,13 +23,15 @@ module.exports = {
         'react/no-multi-comp': 0,
 
         // 주요 메서드 정렬
-        "react/sort-comp": [1, [
-            "type-annotations",
-            "static-methods",
-            "lifecycle",
-            "everything-else",
-            "render"
-        ]],
+        "react/sort-comp": [1, {
+            "order": {
+                "type-annotations",
+                "static-methods",
+                "lifecycle",
+                "everything-else",
+                "render"
+            }
+        }],
 
         // isMounted() 사용안하도록 권고
         'react/no-is-mounted': 1,
