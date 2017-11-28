@@ -24,13 +24,13 @@ module.exports = {
 
         // 주요 메서드 정렬
         "react/sort-comp": [1, {
-            "order": {
+            "order": [
                 "type-annotations",
                 "static-methods",
                 "lifecycle",
                 "everything-else",
                 "render"
-            }
+            ]
         }],
 
         // isMounted() 사용안하도록 권고
