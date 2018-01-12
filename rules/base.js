@@ -15,7 +15,7 @@ module.exports = {
         'no-param-reassign': 0,
         'no-unneeded-ternary': 0,
         'no-restricted-globals': 0,
-        'no-mixed-operators': 1, // && || 섞어 쓰지 않음
+        'no-mixed-operators': 2, // && || 섞어 쓰지 않음
         'newline-per-chained-call': 0,
         'consistent-return': 0,
         'padded-blocks': 0,
@@ -50,6 +50,12 @@ module.exports = {
         'no-mixed-operators': 0, // 연산자를 연결해서 쓸 수 있도록
         'jsx-a11y/anchor-is-valid': 0, // anchor 태그를 button 대신 쓸 수 있도록 (IE 스타일 오류 때문)
 
-        "no-plusplus": 0
+        "no-plusplus": 0,
+        "no-loop-func": 1,
+
+        // { a, b, c } 같이 객체를 풀 때 에러 안나도록 수정
+        "object-curly-newline": ["error", {
+            "consistent": true
+        }]
     }
 };
