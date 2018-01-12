@@ -7,6 +7,8 @@ module.exports = {
         'no-new': 0,
         'no-alert': 0,
         'no-unused-vars': ['error', { 'vars': 'all', 'args': 'none' }],
+        'no-lonely-if': 0,
+        'no-return-reassign': 0,
         'default-case': 0,
         'func-names': 0,
         'no-var': 0,
@@ -28,7 +30,8 @@ module.exports = {
 
         'indent': [2, 4, {
             'VariableDeclarator': 2,
-            'SwitchCase': 1
+            'SwitchCase': 1,
+            'MemberExpression': 'off' // 메서드 체이닝시 indent는 마음대로
         }],
         'comma-dangle': [2, 'never'],
         'space-before-function-paren': 0,
