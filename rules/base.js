@@ -31,6 +31,7 @@ module.exports = {
         'indent': [2, 4, {
             'VariableDeclarator': 2,
             'SwitchCase': 1,
+            'FunctionExpression': 'off', // 함수에 인자가 많을 경우 indent 마음대로
             'MemberExpression': 'off' // 메서드 체이닝시 indent는 마음대로
         }],
         'comma-dangle': [2, 'never'],
