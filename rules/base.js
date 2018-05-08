@@ -1,6 +1,8 @@
 module.exports = {
     plugins: ['import'],
     rules: {
+	'no-restricted-syntax': 0,
+	'no-await-in-loop': 0,
         'no-console': 0,
         'no-else-return': 0,
         'no-empty': 0,
