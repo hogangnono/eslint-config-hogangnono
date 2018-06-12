@@ -52,17 +52,18 @@ module.exports = {
         'import/extensions': 0, // import할때 확장자 써도 됨
         'import/first': 0, // absolute/relative import 위치 상관 없이
         'import/no-mutable-exports': 0,
-        "import/no-dynamic-require": 0,
-        "import/newline-after-import": 0,
+        'import/no-dynamic-require': 0,
+        'import/newline-after-import': 0,
 
         'no-mixed-operators': 0, // 연산자를 연결해서 쓸 수 있도록
         'jsx-a11y/anchor-is-valid': 0, // anchor 태그를 button 대신 쓸 수 있도록 (IE 스타일 오류 때문)
+        'class-methods-use-this': 0, // class 메서드를 외부에서 호출할 때 static 형태로만 호출하지 않아도 되게 수정. instance 형태로 import 하는 구문도 있고, this를 쓰는지 안쓰는지 구분하지 않고 만들기 때문에 은근 불편함
 
-        "no-plusplus": 0,
-        "no-loop-func": 1,
+        'no-plusplus': 0,
+        'no-loop-func': 1,
 
         // { a, b, c } 같이 객체를 풀 때 에러 안나도록 수정
-        "object-curly-newline": ["error", {
+        'object-curly-newline': ['error', {
             "consistent": true
         }]
     }
