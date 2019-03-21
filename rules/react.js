@@ -74,7 +74,10 @@ module.exports = {
 
         // babel 옵션 추가 @see https://github.com/babel/eslint-plugin-babel
         'babel/semi': 1,
-        'babel/quotes': 1,
+        "babel/quotes": [1, "single", {
+            "avoidEscape": true,
+            "allowTemplateLiterals": true
+        }],
         'babel/no-unused-expressions': 1,
         'babel/camelcase': 1
     }
