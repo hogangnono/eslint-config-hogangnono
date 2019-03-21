@@ -78,7 +78,6 @@ module.exports = {
             "avoidEscape": true,
             "allowTemplateLiterals": true
         }],
-        'babel/no-unused-expressions': 1,
-        'babel/camelcase': 1
+        'babel/no-unused-expressions': 1
     }
 };
