@@ -73,9 +73,9 @@ module.exports = {
         'jsx-a11y/no-static-element-interactions': 1,
 
         // babel 옵션 추가 @see https://github.com/babel/eslint-plugin-babel
-        'babel/semi',
-        'babel/quotes',
-        'babel/no-unused-expressions',
-        'babel/camelcase'
+        'babel/semi': 1,
+        'babel/quotes': 1,
+        'babel/no-unused-expressions': 1,
+        'babel/camelcase': 1
     }
 };
