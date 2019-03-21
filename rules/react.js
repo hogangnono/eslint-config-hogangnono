@@ -5,7 +5,7 @@ module.exports = {
             jsx: true
         }
     },
-    plugins: ['react', 'jsx-a11y'],
+    plugins: ['react', 'jsx-a11y', '@babel/plugin-proposal-class-properties'],
     extends: ['plugin:react/recommended', 'eslint-config-airbnb'],
     rules: {
         'react/jsx-indent': [2, 4],

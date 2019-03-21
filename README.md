@@ -2,7 +2,7 @@
 
 ## 설치
 ```
-yarn add -D eslint babel-eslint eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint-config-airbnb
+yarn add -D eslint babel-eslint eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint-config-airbnb @babel/plugin-proposal-class-properties
 yarn add -D eslint-config-hogangnono
 ```
 

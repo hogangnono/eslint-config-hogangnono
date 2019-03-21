@@ -1,5 +1,5 @@
 module.exports = {
-    plugins: ['import', '@babel/plugin-proposal-class-properties'],
+    plugins: ['import'],
     rules: {
 	'no-restricted-syntax': 0,
 	'no-await-in-loop': 0,
