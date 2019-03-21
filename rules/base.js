@@ -1,5 +1,5 @@
 module.exports = {
-    plugins: ['import'],
+    plugins: ['import', '@babel/plugin-proposal-class-properties'],
     rules: {
         'no-console': 0,
         'no-else-return': 0,
