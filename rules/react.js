@@ -5,7 +5,7 @@ module.exports = {
             jsx: true
         }
     },
-    plugins: ['react', 'jsx-a11y', '@babel/plugin-proposal-class-properties'],
+    plugins: ['react', 'jsx-a11y', 'babel'],
     extends: ['plugin:react/recommended', 'eslint-config-airbnb'],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -70,6 +70,12 @@ module.exports = {
 
         // 이벤트 핸들러 있는곳에는 role 필요
         'jsx-a11y/anchor-is-valid': 1,
-        'jsx-a11y/no-static-element-interactions': 1
+        'jsx-a11y/no-static-element-interactions': 1,
+
+        // babel 옵션 추가 @see https://github.com/babel/eslint-plugin-babel
+        'babel/semi',
+        'babel/quotes',
+        'babel/no-unused-expressions',
+        'babel/camelcase'
     }
 };
