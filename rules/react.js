@@ -67,6 +67,7 @@ module.exports = {
         'react/jsx-closing-tag-location': 0,
         'react/jsx-max-props-per-line': 0,
         'react/self-closing-comp': 0,
+        'react/destructuring-assignment': 0,
 
         // 이벤트 핸들러 있는곳에는 role 필요
         'jsx-a11y/anchor-is-valid': 1,
