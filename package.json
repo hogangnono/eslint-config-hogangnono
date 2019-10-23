@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hogangnono",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "eslint-config-hogangnono",
   "main": "index.js",
   "repository": {

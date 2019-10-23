@@ -1,8 +1,8 @@
 module.exports = {
     plugins: ['import'],
     rules: {
-	'no-restricted-syntax': 0,
-	'no-await-in-loop': 0,
+        'no-restricted-syntax': 0,
+        'no-await-in-loop': 0,
         'no-console': 0,
         'no-else-return': 0,
         'no-empty': 0,
@@ -65,6 +65,8 @@ module.exports = {
         // { a, b, c } 같이 객체를 풀 때 에러 안나도록 수정
         'object-curly-newline': ['error', {
             "consistent": true
-        }]
+        }],
+
+        'max-classes-per-file': ['error', 5] // 한 파일에 여러 클래스를 정의할 수 있게 허용
     }
 };
