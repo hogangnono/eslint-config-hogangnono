@@ -79,8 +79,8 @@ module.exports = {
         // multi-line operator의 위치를 정의
         'operator-linebreak': [1, 'before'],
 
-        // 한 줄 조건문 허용하지 않음
-        'curly': [2, 'all'],
+        'curly': [2, 'all'], // 한 줄 조건문 허용하지 않음
+        'padded-blocks': [2, 'never'], // 논리 블럭에 공백 없게
 
         // 이벤트 핸들러 있는곳에는 role 필요
         'jsx-a11y/anchor-is-valid': 1,
