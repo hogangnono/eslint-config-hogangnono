@@ -75,6 +75,7 @@ module.exports = {
         'react/jsx-props-no-spreading': 0,
         'react/static-property-placement': 0,
         'react/jsx-one-expression-per-line': 0,
+        'react/state-in-constructor': 0,
 
         // multi-line operator의 위치를 정의
         'operator-linebreak': [1, 'before'],
