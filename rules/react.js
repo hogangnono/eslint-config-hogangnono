@@ -77,7 +77,7 @@ module.exports = {
         'react/jsx-one-expression-per-line': 0,
 
         // multi-line operator의 위치를 정의
-        'operator-linebreak': ['before'],
+        'operator-linebreak': [1, 'before'],
 
         // 이벤트 핸들러 있는곳에는 role 필요
         'jsx-a11y/anchor-is-valid': 1,
