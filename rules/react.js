@@ -23,13 +23,13 @@ module.exports = {
         'react/no-multi-comp': 0,
 
         // 주요 메서드 정렬
-        "react/sort-comp": [1, {
-            "order": [
-                "type-annotations",
-                "static-methods",
-                "lifecycle",
-                "everything-else",
-                "render"
+        'react/sort-comp': [1, {
+            'order': [
+                'type-annotations',
+                'static-methods',
+                'lifecycle',
+                'everything-else',
+                'render'
             ]
         }],
 
@@ -40,12 +40,16 @@ module.exports = {
         'react/prefer-stateless-function': 0,
 
         // prop-types primitive 타입으로 지정할 수 있게
-        "react/forbid-prop-types": 0,
+        'react/forbid-prop-types': 0,
 
         // isRequired가 아닌 props에 대해서 defaultProps를 지정 안해도 되게
-        "react/require-default-props": 0,
+        'react/require-default-props': 0,
 
-        'react/prop-types': 1,
+        // prop-types에서 children은 정의 안해도 됨
+        'react/prop-types': [1, {
+            ignore: ['children']
+        }],
+
         'react/no-unused-prop-types': 1,
         'react/no-unused-state': 1,
 
@@ -53,10 +57,10 @@ module.exports = {
         'react/no-did-update-set-state': 1,
         'react/no-will-update-set-state': 1,
 
-        'react/jsx-no-bind': [ 1, {
+        'react/jsx-no-bind': [1, {
             ignoreRefs: true,
             allowArrowFunctions: true
-        } ],
+        }],
         'react/no-array-index-key': 1,
 
         // class 정의 안써도 됨.
@@ -69,7 +73,11 @@ module.exports = {
         'react/self-closing-comp': 0,
         'react/destructuring-assignment': 0,
         'react/jsx-props-no-spreading': 0,
-        "react/static-property-placement": 0,
+        'react/static-property-placement': 0,
+        'react/jsx-one-expression-per-line': 0,
+
+        // multi-line operator의 위치를 정의
+        'operator-linebreak': ['before'],
 
         // 이벤트 핸들러 있는곳에는 role 필요
         'jsx-a11y/anchor-is-valid': 1,
@@ -77,9 +85,9 @@ module.exports = {
 
         // babel 옵션 추가 @see https://github.com/babel/eslint-plugin-babel
         'babel/semi': 1,
-        "babel/quotes": [1, "single", {
-            "avoidEscape": true,
-            "allowTemplateLiterals": true
+        'babel/quotes': [1, 'single', {
+            'avoidEscape': true,
+            'allowTemplateLiterals': true
         }],
         'babel/no-unused-expressions': 1
     }

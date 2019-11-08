@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hogangnono",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "eslint-config-hogangnono",
   "main": "index.js",
   "repository": {
@@ -18,12 +18,12 @@
   "homepage": "https://github.com/hogangnono/eslint-config-hogangnono#readme",
   "dependencies": {
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.3.0",
+    "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3"
+    "eslint-plugin-react": "^7.16.0"
   }
 }
