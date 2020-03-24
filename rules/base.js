@@ -24,7 +24,7 @@ module.exports = {
         'consistent-return': 0,
         'padded-blocks': 0,
         'global-require': 0, // require()는 함수안에서도 가능
-
+        'import/prefer-default-export': 0, // default를 꼭 안써도 되게 함
         'prefer-arrow-callback': 0,
         'prefer-destructuring': 0,
         'arrow-body-style': 0,
