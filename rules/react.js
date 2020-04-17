@@ -1,13 +1,12 @@
 module.exports = {
-    parser: 'babel-eslint',
-    parserOptions: {
-        ecmaFeatures: {
-            jsx: true
-        }
-    },
     plugins: ['react', 'jsx-a11y', 'babel'],
-    extends: ['plugin:react/recommended', 'eslint-config-airbnb'],
+    extends: [
+        'plugin:react/recommended',
+    ],
     rules: {
+        /**
+         * react
+         */
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
 
@@ -76,18 +75,17 @@ module.exports = {
         'react/static-property-placement': 0,
         'react/jsx-one-expression-per-line': 0,
         'react/state-in-constructor': 0,
+        'react/jsx-fragments': 1,
 
-        // multi-line operator의 위치를 정의
-        'operator-linebreak': [1, 'before'],
+        /**
+         * jsx-a11y
+         */
+        'jsx-a11y/anchor-is-valid': 0, // anchor 태그를 button 대신 쓸 수 있도록 (IE 스타일 오류 때문)
+        'jsx-a11y/no-static-element-interactions': 1, // 이벤트 핸들러 있는곳에는 role 필요
 
-        'curly': [2, 'all'], // 한 줄 조건문 허용하지 않음
-        'padded-blocks': [2, 'never'], // 논리 블럭에 공백 없게
-
-        // 이벤트 핸들러 있는곳에는 role 필요
-        'jsx-a11y/anchor-is-valid': 1,
-        'jsx-a11y/no-static-element-interactions': 1,
-
-        // babel 옵션 추가 @see https://github.com/babel/eslint-plugin-babel
+        /**
+         * babel 옵션 추가 @see https://github.com/babel/eslint-plugin-babel
+         */
         'babel/semi': 1,
         'babel/quotes': [1, 'single', {
             'avoidEscape': true,

@@ -1,7 +1,17 @@
 module.exports = {
+    parser: 'babel-eslint',
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true
+        }
+    },
+    settings: {
+        react: {
+            version: 'detect'
+        }
+    },
     extends: [
-        'eslint-config-airbnb-base',
-        './rules/react',
-        './rules/base'
-    ].map(require.resolve)
+        require.resolve('./rules/base'),
+        require.resolve('./rules/react')
+    ]
 };

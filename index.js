@@ -1,6 +1,6 @@
 module.exports = {
+    parser: 'babel-eslint',
     extends: [
-        'eslint-config-airbnb-base',
-        './rules/base'
-    ].map(require.resolve)
+        require.resolve('./rules/base')
+    ]
 };
