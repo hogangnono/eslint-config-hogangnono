@@ -1,12 +1,14 @@
 module.exports = {
-    plugins: ['react', 'jsx-a11y', 'babel'],
+    plugins: ['react', 'react-hooks', 'jsx-a11y', 'babel'],
     extends: [
         'plugin:react/recommended',
+        'plugin:react-hooks/recommended'
     ],
     rules: {
         /**
          * react
          */
+        'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx'] }], // js 파일 내에서도 jsx 문법 사용가능
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
 

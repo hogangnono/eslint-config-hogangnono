@@ -51,8 +51,8 @@ module.exports = {
         }],
         'comma-dangle': [2, 'never'],
         'keyword-spacing': 2,
-        'space-before-function-paren': [2, {"anonymous": "always", "named": "ignore", "asyncArrow": "always"}], // function 뒤 괄호 사이에 공백 강제
-        'function-paren-newline': [2, "consistent"],
+        'space-before-function-paren': [2, {'anonymous': 'always', 'named': 'ignore', 'asyncArrow': 'always'}], // function 뒤 괄호 사이에 공백 강제
+        'function-paren-newline': [2, 'consistent'],
 
         'prefer-template': 0,
         'object-shorthand': 0,
@@ -70,7 +70,7 @@ module.exports = {
 
         // { a, b, c } 같이 객체를 풀 때 에러 안나도록 수정
         'object-curly-newline': ['error', {
-            "consistent": true
+            'consistent': true
         }],
 
         // multi-line operator의 위치를 정의
