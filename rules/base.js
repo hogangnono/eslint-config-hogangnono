@@ -78,7 +78,7 @@ module.exports = {
 
         'curly': [2, 'all'], // 한 줄 조건문 허용하지 않음
         'max-classes-per-file': ['error', 5], // 한 파일에 여러 클래스를 정의할 수 있게 허용
-        'camelcase': ['error', { allow: ['^UNSAFE_'] }], // 에러처리. 프로퍼티는 dot-notation에서 예외처리해서 허용 (db 때문)
+        'camelcase': [1, { allow: ['^UNSAFE_'] }], // 경고처리. (db 때문)
         'dot-notation': ['error', { 'allowPattern': '^[a-z]+(_[a-z]+)+$' }], // obj['camelCase']는 에러. obj['snake_case']는 허용
 
         'import/extensions': 0, // import할때 확장자 써도 됨

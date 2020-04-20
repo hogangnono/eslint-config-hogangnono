@@ -63,6 +63,7 @@ module.exports = {
             allowArrowFunctions: true
         }],
         'react/no-array-index-key': 1,
+        'react/no-access-state-in-setstate': 1, // setState할 때 this.state 접근시 warning 으로 변경
 
         // class 정의 안써도 됨.
         'react/prefer-es6-class': 0,
