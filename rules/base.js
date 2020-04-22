@@ -29,6 +29,7 @@ module.exports = {
         'no-unneeded-ternary': 0,
         'no-restricted-globals': 0,
         'no-mixed-operators': 2, // && || 섞어 쓰지 않음
+        'no-extra-boolean-cast': 0, // !! 사용가능
         'newline-per-chained-call': 0,
         'consistent-return': 0,
         'padded-blocks': [2, 'never'], // 논리 블럭에 공백 없게

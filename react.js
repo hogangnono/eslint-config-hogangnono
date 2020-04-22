@@ -8,6 +8,14 @@ module.exports = {
     settings: {
         react: {
             version: 'detect'
+        },
+        'import/resolver': {
+            node: {
+                extensions: [
+                    '.js',
+                    '.jsx' // vscode auto import에서 jsx 생략되어도 import를 resolve할 수 있도록 수정
+                ]
+            }
         }
     },
     extends: [
