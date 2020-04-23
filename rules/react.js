@@ -1,5 +1,5 @@
 module.exports = {
-    plugins: ['react', 'react-hooks', 'jsx-a11y', 'babel'],
+    plugins: ['react', 'react-hooks', 'jsx-a11y'],
     extends: [
         'plugin:react/recommended',
         'plugin:react-hooks/recommended'
@@ -84,16 +84,6 @@ module.exports = {
          * jsx-a11y
          */
         'jsx-a11y/anchor-is-valid': 0, // anchor 태그를 button 대신 쓸 수 있도록 (IE 스타일 오류 때문)
-        'jsx-a11y/no-static-element-interactions': 1, // 이벤트 핸들러 있는곳에는 role 필요
-
-        /**
-         * babel 옵션 추가 @see https://github.com/babel/eslint-plugin-babel
-         */
-        'babel/semi': 1,
-        'babel/quotes': [1, 'single', {
-            'avoidEscape': true,
-            'allowTemplateLiterals': true
-        }],
-        'babel/no-unused-expressions': 1
+        'jsx-a11y/no-static-element-interactions': 1 // 이벤트 핸들러 있는곳에는 role 필요
     }
 };

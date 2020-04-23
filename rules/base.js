@@ -1,5 +1,5 @@
 module.exports = {
-    plugins: ['import'],
+    plugins: ['import', 'babel'],
     extends: [
         'eslint:recommended',
         'eslint-config-airbnb-base'
@@ -79,7 +79,6 @@ module.exports = {
 
         'curly': [2, 'all'], // 한 줄 조건문 허용하지 않음
         'max-classes-per-file': ['error', 5], // 한 파일에 여러 클래스를 정의할 수 있게 허용
-        "camelcase": [2, { allow: ['^UNSAFE_'], "properties": "never", "ignoreDestructuring": true }], // 최소한만 에러 처리. (db 때문)
         'dot-notation': ['error', { 'allowPattern': '^[a-z]+(_[a-z]+)+$' }], // obj['camelCase']는 에러. obj['snake_case']는 허용
 
         'import/extensions': 0, // import할때 확장자 써도 됨
@@ -87,5 +86,19 @@ module.exports = {
         'import/no-mutable-exports': 0,
         'import/no-dynamic-require': 0,
         'import/newline-after-import': 0,
+
+        /**
+         * babel 옵션 추가 @see https://github.com/babel/eslint-plugin-babel
+         */
+        'babel/semi': 1,
+        'babel/quotes': [1, 'single', {
+            'avoidEscape': true,
+            'allowTemplateLiterals': true
+        }],
+        'babel/no-unused-expressions': 1,
+
+        // camelcase는 optional chaning에 대응이 잘 안되므로 해제하고 babel/camelcase로 덮어서 처리
+        'camelcase': 0,
+        'babel/camelcase': [2, { allow: ['^UNSAFE_'], 'properties': 'never', 'ignoreDestructuring': true }], // 최소한만 에러 처리. (db 때문)
     }
 };
