@@ -99,6 +99,6 @@ module.exports = {
 
         // camelcase는 optional chaning에 대응이 잘 안되므로 해제하고 babel/camelcase로 덮어서 처리
         'camelcase': 0,
-        'babel/camelcase': [2, { allow: ['^UNSAFE_'], 'properties': 'never', 'ignoreDestructuring': true }], // 최소한만 에러 처리. (db 때문)
+        'babel/camelcase': [2, { 'properties': 'never', 'ignoreDestructuring': true }] // 최소한만 에러 처리. (db 때문) allow: ['^UNSAFE_'] 옵션 쓸 수 없어서 제거
     }
 };
