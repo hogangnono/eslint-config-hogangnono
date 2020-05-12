@@ -30,6 +30,41 @@ module.exports = {
         'no-restricted-globals': 0,
         'no-mixed-operators': 2, // && || 섞어 쓰지 않음
         'no-extra-boolean-cast': 0, // !! 사용가능
+        'no-restricted-properties': ['error', { // eslint-config-airbnb-base의 기본셋에서 Math.pow 사용가능하게 변경
+            object: 'arguments',
+            property: 'callee',
+            message: 'arguments.callee is deprecated',
+        }, {
+            object: 'global',
+            property: 'isFinite',
+            message: 'Please use Number.isFinite instead',
+        }, {
+            object: 'self',
+            property: 'isFinite',
+            message: 'Please use Number.isFinite instead',
+        }, {
+            object: 'window',
+            property: 'isFinite',
+            message: 'Please use Number.isFinite instead',
+        }, {
+            object: 'global',
+            property: 'isNaN',
+            message: 'Please use Number.isNaN instead',
+        }, {
+            object: 'self',
+            property: 'isNaN',
+            message: 'Please use Number.isNaN instead',
+        }, {
+            object: 'window',
+            property: 'isNaN',
+            message: 'Please use Number.isNaN instead',
+        }, {
+          property: '__defineGetter__',
+          message: 'Please use Object.defineProperty instead.',
+        }, {
+          property: '__defineSetter__',
+          message: 'Please use Object.defineProperty instead.',
+        }],
         'newline-per-chained-call': 0,
         'consistent-return': 0,
         'padded-blocks': [2, 'never'], // 논리 블럭에 공백 없게
@@ -47,7 +82,7 @@ module.exports = {
                 'parameters': 'off' // 함수에 인자가 많을 경우 indent 마음대로
             },
             'MemberExpression': 'off', // 메서드 체이닝시 indent는 마음대로
-            'ignoredNodes': ['TemplateLiteral *'], // 템플릿 리터럴 내에서 무시
+            'ignoredNodes': ['TemplateLiteral *'], // 템플릿 리터럴 내에서 무시,
             'ignoreComments': true // 주석내에서는 허용
         }],
         'comma-dangle': [2, 'never'],
@@ -90,12 +125,13 @@ module.exports = {
         /**
          * babel 옵션 추가 @see https://github.com/babel/eslint-plugin-babel
          */
-        'babel/semi': 1,
+        'babel/semi': 2,
         'babel/quotes': [1, 'single', {
             'avoidEscape': true,
             'allowTemplateLiterals': true
         }],
-        'babel/no-unused-expressions': 1,
+        'no-unused-expressions': 0, // babel/no-unused-expressions 로 처리
+        'babel/no-unused-expressions': 2,
 
         // camelcase는 optional chaning에 대응이 잘 안되므로 해제하고 babel/camelcase로 덮어서 처리
         'camelcase': 0,
